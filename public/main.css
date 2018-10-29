@@ -1,0 +1,283 @@
+/* UNIVERSAL STYLES AND LAYOUT */
+
+#root {
+    height: 100vh;
+}
+
+* {
+    color: rgba(238, 197, 248, 0.9);
+    font-family: 'Raleway', sans-serif;
+}
+
+.App {
+    height: 100vh;
+    background-image: url(./background.jpg);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.app-parts {
+    height: 55vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+/* CLOCK STYLES */
+
+.clock-weather {
+    display: flex;
+    justify-content: space-around;
+    height: 20vh;
+    margin-bottom: 5vh;
+    width: 70%;
+    margin: 0;
+}
+
+.clock-component {
+    display: inline-flex;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+    margin-left: 0;
+    margin-bottom: 20px;
+    flex-direction: column;
+    justify-content: top;
+    align-items: flex-start;
+    
+}
+
+.clock-component h1 {
+    color: rgba(238, 197, 248, 0.9);
+}
+
+.time {
+    display: flex;
+    font-size: 40px;
+    align-items: top;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.date {
+    margin: 0;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: top;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.amPm {
+    margin-left: 20px;
+}
+
+.time h1 {
+    margin-top: 0;
+    text-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+.date h1 {
+    margin: 0 5px;
+    height: 30px;
+    text-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+span .date {
+    width: 80%;
+    font-size: 10px;
+}
+/* WEATHER STYLES */
+
+.weather-component {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.weather-top {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.weather-top h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+.weather-top i {
+    margin-right: 10px;
+}
+
+.weather-bottom h2 {
+    font-size: 14px;
+}
+
+/* TODO LIST STYLES */
+
+.todo-component {
+    width: 50%;
+}
+
+.task-title {
+    font-weight: 400;
+}
+
+.task-input {
+    font-weight: 600;
+    color: rgba(238, 197, 248, 0.9);
+}
+
+.task-confirmation {
+    font-size: 20px;
+    border: none;
+    font-weight: 600;
+}
+
+input {
+    background-color: rgba(0,0,0,0.4);
+    color: rgba(238, 197, 248, 0.9);
+    border: none;
+    font-size: 20px;
+    padding: 1px 7px;
+}
+
+.task-text {
+    display: inline;
+    margin: 0;
+    font-weight: 600;
+    font-size: 16px;
+    max-width: 60%;
+    text-align: left;
+}
+
+.individual-task {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.task-edit-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.task-edit-input {
+    width: 60%;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* NEWS STYLES */
+
+.news-component {
+    display: inline-block;
+    width: 50%;
+}
+
+.article-container {
+    overflow: scroll;
+    height: 85%;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+    background: transparent; 
+}
+
+.article {
+    width: 95%;
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    justify-content: space-between;
+    background-color: rgba(0,0,0,0.4);
+    border-radius: 10px;
+}
+
+.news-component img {
+    height: 20vh;
+    width: 30%;
+    border-radius: 5%;
+    opacity: .9;
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
+}
+
+.news-component a {
+    width: 100%;
+    color: rgba(248, 218, 255, 0.9);
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+
+.article-info-container a:hover {
+    color: rgb(207, 241, 247);
+}
+
+.article-info-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 5%;
+}
+
+.article-info-container p {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: rgba(238, 197, 248, 0.9);
+    font-weight: 600;
+}
+
+.article-info-container .byline {
+    margin-top: 5px;
+    font-family: sans-serif;
+    font-size: 10px;
+}
+
+p.text {
+    font-size: 15px;
+}
+
+.buttons {
+    height: 10%;
+}
+
+.news-component button {
+    width: 33%;
+    font-size: 20px;
+}
+
+button {
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid rgba(0,0,0,0.3);
+}
+
+.news-component button:focus {
+    background-color: rgb(255, 255, 255, 0.8);
+    color: black;
+}
+
+.news-component h1 {
+    margin: 0;
+    font-weight: 400;
+    text-shadow: 2px 2px rgba(0,0,0,0.2);
+}
+
+.tasks-list-container {
+    overflow: scroll;
+    height: 60%;
+}

@@ -61,7 +61,8 @@ import Task from './task';
     render () {
         var taskList = this.state.tasks.map(task => {
             return (
-                <Task 
+                <Task
+                key={task.id} 
                 task={task}
                 deleteTask={this.deleteTask}
                 editTask={this.editTask} />
@@ -71,9 +72,11 @@ import Task from './task';
         return (
             <div className="task-container">
                 <h1 className="task-title">{this.state.tasks.length} Tasks To Complete</h1>
-                {taskList}
-                <input value={this.state.userInput} className="task-input" placeholder='New Task' onChange={e => this.handleInputChange(e.target.value)} onKeyUp={this.handleKeyUp}></input>
-                <button id="button" className="task-confirmation" onClick={this.addTask}>Add Task</button>
+                <div className="tasks-list-container">
+                    {taskList}
+                </div>
+                    <input value={this.state.userInput} className="task-input" placeholder='New Task' onChange={e => this.handleInputChange(e.target.value)} onKeyUp={this.handleKeyUp}></input>
+                    <button id="button" className="task-confirmation" onClick={this.addTask}>Add Task</button>
             </div>
         )
     }
