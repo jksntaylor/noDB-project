@@ -237,7 +237,9 @@ input {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 60%;
     margin-left: 5%;
+    margin-right: 5%;
 }
 
 .article-info-container p {
@@ -255,6 +257,10 @@ input {
 
 p.text {
     font-size: 15px;
+}
+
+p.date {
+    justify-content: center;
 }
 
 .buttons {
