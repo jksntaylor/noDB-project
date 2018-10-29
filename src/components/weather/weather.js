@@ -29,7 +29,7 @@ class Weather extends Component {
             return (
                 <div className='weather-component'>
                     <div className='weather-top'>
-                        <i className="fas fa-sun"></i>
+                        <i className="fas fa-sun fa-2x"></i>
                         <h1 className='temperature'>{this.state.temperature}</h1>
                         <h1 className='degreeSymbol'>&deg;</h1>
                     </div>
@@ -42,7 +42,7 @@ class Weather extends Component {
             return (
                 <div className='weather-component'>
                     <div className='weather-top'>
-                        <i className="fas fa-cloud-sun"></i>
+                        <i className="fas fa-cloud-sun fa-2x"></i>
                         <h1 className='temperature'>{this.state.temperature}</h1>
                         <h1 className='degreeSymbol'>&deg;</h1>
                     </div>
@@ -55,7 +55,7 @@ class Weather extends Component {
             return (
                 <div className='weather-component'>
                     <div className='weather-top'>
-                        <i className="fas fa-cloud"></i>
+                        <i className="fas fa-cloud fa-2x"></i>
                         <h1 className='temperature'>{this.state.temperature}</h1>
                         <h1 className='degreeSymbol'>&deg;</h1>
                     </div>
@@ -81,7 +81,7 @@ class Weather extends Component {
             return (
                 <div className='weather-component'>
                     <div className='weather-top'>
-                        <i className="fas fa-bolt"></i>
+                        <i className="fas fa-bolt fa-2x"></i>
                         <h1 className='temperature'>{this.state.temperature}</h1>
                         <h1 className='degreeSymbol'>&deg;</h1>
                     </div>
@@ -94,7 +94,7 @@ class Weather extends Component {
             return (
                 <div className='weather-component'>
                     <div className='weather-top'>
-                        <i className="fas fa-snowflake"></i>
+                        <i className="fas fa-snowflake fa-2x"></i>
                         <h1 className='temperature'>{this.state.temperature}</h1>
                         <h1 className='degreeSymbol'>&deg;</h1>
                     </div>

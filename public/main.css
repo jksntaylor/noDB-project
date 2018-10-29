@@ -110,6 +110,7 @@ span .date {
 .weather-top h1 {
     margin: 0;
     font-size: 40px;
+    /* font-family: sans-serif; */
 }
 
 .weather-top i {
@@ -163,6 +164,10 @@ input {
     justify-content: space-between;
     margin-bottom: 10px;
     width: 100%;
+}
+
+.tasks-list-container {
+    padding: 5px;
 }
 
 .task-edit-container {

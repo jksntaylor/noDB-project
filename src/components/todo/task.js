@@ -27,7 +27,7 @@ class Task extends Component {
     handleKeyUp (e) {
         e.preventDefault();
         if (e.keyCode === 13) {
-            document.getElementById("button").click();
+            document.getElementById("confirm-edit-button").click();
         }
     }
 
@@ -37,9 +37,12 @@ class Task extends Component {
                 {
                     this.state.editMode ? (
                         <div className='task-edit-container'>
-                            <input className="task-edit-input" value={this.state.text} type='text' onChange={e => this.handleTextChange(e.target.value)}/>
+                            <input className="task-edit-input" value={this.state.text} type='text' onChange={e => this.handleTextChange(e.target.value)}
+                            onKeyUp={this.handleKeyUp}/>
                             <div className='task-edit-buttons'>
-                                <button className="task-edit-confirmation" onClick={() => {
+                                <button className="task-edit-confirmation" 
+                                id='confirm-edit-button'
+                                onClick={() => {
                                     this.props.editTask(this.state.text, this.props.task.id)
                                     this.toggleEdit()
                                     }}>Confirm</button>

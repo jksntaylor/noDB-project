@@ -54,7 +54,7 @@ import Task from './task';
     handleKeyUp (e) {
             e.preventDefault();
             if (e.keyCode === 13) {
-                document.getElementById("button").click();
+                document.getElementById("confirm-button").click();
             }
         }
 
@@ -76,7 +76,7 @@ import Task from './task';
                     {taskList}
                 </div>
                     <input value={this.state.userInput} className="task-input" placeholder='New Task' onChange={e => this.handleInputChange(e.target.value)} onKeyUp={this.handleKeyUp}></input>
-                    <button id="button" className="task-confirmation" onClick={this.addTask}>Add Task</button>
+                    <button id="confirm-button" className="task-confirmation" onClick={this.addTask}>Add Task</button>
             </div>
         )
     }
